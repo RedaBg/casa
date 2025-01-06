@@ -1,0 +1,58 @@
+.btn-create-ticket {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #028476;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-create-ticket:hover {
+    color: #028476;
+    background-color:rgb(255, 255, 255);
+}
+
+.status-open {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #17bd61;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Apparence de "bouton" pour le statut "Résolu" */
+.status-resolved {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #d3a014;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Apparence de "bouton" pour le statut "Fermé" */
+.status-closed {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ad1111;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
