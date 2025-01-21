@@ -4,9 +4,9 @@ session_start();
 
 if (isset($_SESSION['role'])) {
     if ($_SESSION['role'] == 'Member')
-        header('Location: Membres/membre');
+        header('Location: Membres/membre.php');
     if ($_SESSION['role'] == 'Admin')
-        header('Location: Admin/admin');
+        header('Location: Admin/admin.php');
     exit();
 }
 ?>
@@ -19,34 +19,31 @@ if (isset($_SESSION['role'])) {
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Freelancer - Start Bootstrap Theme</title>
-        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="../css/btn.css" rel="stylesheet">
+
     </head>
 
 
     <body id="page-top" class="bg-primary">
-        <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="index">Service de Ticketing</a>
+                <a class="navbar-brand" href="index.php">Service de Ticketing</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="login">Login</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="about">à propos</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="login.php">Login</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="about.php">à propos</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,13 +53,12 @@ if (isset($_SESSION['role'])) {
         <header class="masthead bg-primary text-white text-center" style="height: 100vh;">
             <div class="container d-flex align-items-center flex-column">
                 <h1 class="masthead-heading text-uppercase mb-0">Connexion</h1>
-                <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <form action="login" method="post">
+                <form action="login.php" method="post">
                     <div class="form-group mb-3 ">
                         <label class="mb-2" for="exampleInputEmail1">E-mail</label>
                         <input type="email" name ="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail" style="width:350px;" required>
@@ -76,7 +72,7 @@ if (isset($_SESSION['role'])) {
             </div>
             <div>
                 <p class="text-white mt-3">Vous n'avez pas encore de compte ?<br></p>
-                <button type="button" class="btn btn-primary" onclick="window.location.href='create'"><u>Créer un compte</u></button>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='create.php'"><u>Créer un compte</u></button>
             </div>
 
 <?php

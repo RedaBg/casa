@@ -1,3 +1,26 @@
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #8d8e8e;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    color: #8d8e8e;
+    background-color: #ffffff;
+}
+
+.btn-back:hover img.retour {
+    content: url('../assets/img/fleche2.png');
+    transition: background-color 0.3s ease;
+}
+
 .btn-create-ticket {
     display: inline-block;
     padding: 10px 20px;
@@ -21,12 +44,11 @@
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    background-color: #17bd61;
+    background-color: #c89133;
     color: #fff;
     border: none;
     border-radius: 7px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
 }
 
 /* Apparence de "bouton" pour le statut "Résolu" */
@@ -35,12 +57,11 @@
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    background-color: #d3a014;
+    background-color: #38a246;
     color: #fff;
     border: none;
     border-radius: 7px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
 }
 
 /* Apparence de "bouton" pour le statut "Fermé" */
@@ -54,5 +75,38 @@
     border: none;
     border-radius: 7px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+}
+
+.prio-low {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #065c11;
+    background-color: #b2e0b8;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.prio-med {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e9c89b;
+    color: #944a10;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.prio-high {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #edacac;
+    color: #550707;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
 }
