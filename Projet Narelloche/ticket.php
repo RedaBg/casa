@@ -143,7 +143,7 @@ function creerTicket() {
         $stmt->bind_param("issssii", $new_id, $title, $message, $full_name, $email, $category_id, $account_id);
 
         if ($stmt->execute()) {
-            header("Location: membre.php");
+            header("Location: ../mail.php");
             exit();
         } else {
             echo "Erreur lors de la création du ticket : " . $stmt->error;
