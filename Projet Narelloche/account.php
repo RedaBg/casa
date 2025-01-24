@@ -94,7 +94,8 @@ function creerCompte() {
             $stmt->bind_param("issss", $new_id, $username, $hashedPassword, $email, $role);
 
             if ($stmt->execute()) {
-                header("Location: Membres/membre.php");
+                header("Location: mail.php?action=2&user=" .$username. ""); 
+                exit();
             } else {
                 echo "Erreur lors de la création du compte : " . $stmt->error;
             }
